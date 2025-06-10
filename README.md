@@ -1,19 +1,18 @@
-# Mini Projet Fullstack : Carnet de Contacts
+# Mini projet fullstack : un carnet de contacts
 
-> Application fullstack minimaliste permettant d’ajouter, afficher et supprimer des contacts.  
-Elle utilise **NestJS** (backend), **PostgreSQL + TypeORM** (base de données), et **React** (frontend) avec **TypeScript**.
+> Mini application fullstack permettant d’ajouter, afficher et supprimer des contacts.  
+Utilisation de **NestJS** (backend), **PostgreSQL + TypeORM** (base de données), et **React** (frontend) avec **TypeScript**.
 
 ---
 
 ## Objectif du projet
 
-Ce projet a pour but de **comprendre le fonctionnement complet d'une application web fullstack** moderne :
+Ce mini projet a pour but de comprendre le fonctionnement complet d'une application web fullstack moderne, et surtout des **échanges entre front, back et base de données** :
 
-- Structurer un backend NestJS (module, controller, service)
-- Connecter une base PostgreSQL avec TypeORM
-- Créer une interface utilisateur réactive en React
-- Gérer les appels API via Axios
-- Comprendre les échanges entre front, back et base de données
+- Structuration d'un backend NestJS (module, controller, service)
+- Connection à une base de données PostgreSQL avec TypeORM
+- Création d'une interface utilisateur en React
+- Mise en place d'appels API via Axios
 
 ---
 
@@ -22,12 +21,12 @@ Ce projet a pour but de **comprendre le fonctionnement complet d'une application
 | Outil              | Rôle                                                                 |
 |-------------------|----------------------------------------------------------------------|
 | **NestJS**         | Framework Node.js pour structurer le backend avec logique métier     |
-| **TypeScript**     | Ajoute le typage statique à JS (front + back)                        |
-| **TypeORM**        | ORM qui relie les entités TypeScript aux tables SQL                 |
+| **TypeScript**     | Ajout d'un typage pour front et back                        |
+| **TypeORM**        | ORM permettant de relier les entités TypeScript aux tables SQL                 |
 | **PostgreSQL**     | Base de données relationnelle utilisée pour stocker les contacts     |
-| **React**          | Bibliothèque frontend pour construire l’interface utilisateur        |
-| **Axios**          | Client HTTP utilisé dans React pour appeler l’API backend            |
 | **pgAdmin**        | Interface visuelle pour interagir avec la base PostgreSQL            |
+| **React**          | Pour construire l’interface utilisateur frontend       |
+| **Axios**          | Client HTTP utilisé dans React pour appeler l’API backend            |
 
 
 ---
@@ -43,22 +42,26 @@ Ce projet a pour but de **comprendre le fonctionnement complet d'une application
 
 ### Commandes de démarrage
 
-# Étape 1 : lancer le backend NestJS (API)
+#### Étape 1 : lancer l'API
 cd contact-api
-npm run start:dev &
+```sql
+npm run start:dev
+```
 
-# Étape 2 : lancer le frontend React
+#### Étape 2 : lancer React
 cd ../contact-frontend
+```sql
 npm start
+```
 
 ### Visualisation
 
 Ouvrir le navigateur sur [`http://localhost:3001`](http://localhost:3001)
 
-Pour vérifier ce qui se passe en base, ouvrir **pgAdmin** ou exécuter dans PostgreSQL :
+Pour vérifier ce qui se passe en base, ouvrir **pgAdmin** dans la table `contactdb` ou exécuter dans PostgreSQL :
 
 ```sql
 SELECT * FROM contact;
-
+```
 
 Développé avec ❤️ par Esma.
